@@ -1,0 +1,27 @@
+{
+  "name": "js-b1-projecte-final",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbuj-UOC/js-b1-projecte-final.git"
+  },
+  "keywords": [],
+  "author": "Robert Buj <rbuj@uoc.edu>",
+  "license": "MIT",
+  "type": "commonjs",
+  "homepage": "https://rbuj-uoc.github.io/js-b1-projecte-final/",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.3",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "globals": "^17.4.0",
+    "prettier": "^3.8.1"
+  }
+}
