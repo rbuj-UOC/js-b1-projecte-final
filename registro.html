@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - Lista de la Compra</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <div class="container d-flex justify-content-center align-items-center flex-grow-1 my-5">
+    <div class="glass auth-form p-4 p-md-5 w-100" style="max-width: 650px;">
+      <h2 class="text-center mb-4 fw-bold">Registro de Usuario</h2>
+      <form id="registro-form">
+        <div class="row g-3 mb-3">
+          <div class="col-md-6 form-group" id="group-nombre">
+            <label for="nombre" class="form-label fw-medium text-secondary">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="form-control">
+            <span class="error-message">El nombre no puede estar vacío</span>
+          </div>
+          <div class="col-md-6 form-group" id="group-apellidos">
+            <label for="apellidos" class="form-label fw-medium text-secondary">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" class="form-control">
+            <span class="error-message">Los apellidos no pueden estar vacíos</span>
+          </div>
+        </div>
+
+        <div class="mb-3 form-group" id="group-direccion">
+          <label for="direccion" class="form-label fw-medium text-secondary">Dirección</label>
+          <input type="text" id="direccion" name="direccion" class="form-control">
+          <span class="error-message">La dirección no puede estar vacía</span>
+        </div>
+
+        <div class="row g-3 mb-3">
+          <div class="col-md-4 form-group" id="group-codigo">
+            <label for="codigoPostal" class="form-label fw-medium text-secondary">Código Postal</label>
+            <input type="text" id="codigoPostal" name="codigoPostal" class="form-control">
+            <span class="error-message">Código postal no válido</span>
+          </div>
+          <div class="col-md-8 form-group" id="group-poblacion">
+            <label for="poblacion" class="form-label fw-medium text-secondary">Población</label>
+            <select id="poblacion" name="poblacion" class="form-select">
+              <option value="">Selecciona una población</option>
+            </select>
+            <span class="error-message">Selecciona una población</span>
+          </div>
+        </div>
+
+        <div class="row g-3 mb-3">
+          <div class="col-md-6 form-group" id="group-telefono">
+            <label for="telefono" class="form-label fw-medium text-secondary">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="Ej: 600123456">
+            <span class="error-message">Formato de teléfono inválido (9 dígitos)</span>
+          </div>
+          <div class="col-md-6 form-group" id="group-correo">
+            <label for="correo" class="form-label fw-medium text-secondary">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo" class="form-control" placeholder="ejemplo@correo.com">
+            <span class="error-message">Correo electrónico inválido</span>
+          </div>
+        </div>
+
+        <div class="mb-3 form-group" id="group-usuario-reg">
+          <label for="usuario-reg" class="form-label fw-medium text-secondary">Nombre de Usuario</label>
+          <input type="text" id="usuario-reg" name="usuario-reg" class="form-control">
+          <span class="error-message">Usuario inválido o ya existente</span>
+        </div>
+
+        <div class="mb-4 form-group" id="group-pass-reg">
+          <label for="contrasena-reg" class="form-label fw-medium text-secondary">Contraseña</label>
+          <input type="password" id="contrasena-reg" name="contrasena-reg" class="form-control">
+          <div class="form-text mt-1">Mínimo 8 caracteres, contener letras, números y al menos 2 caracteres especiales.
+          </div>
+          <span class="error-message" id="pass-error">La contraseña no cumple los requisitos</span>
+        </div>
+
+        <div class="d-grid gap-2 mt-4">
+          <button type="submit" class="btn btn-primary fw-bold">Guardar</button>
+          <a href="index.html" class="btn btn-outline-secondary fw-bold">Volver a Login</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/clases.js"></script>
+  <script src="js/datos.js"></script>
+  <script src="js/registro.js"></script>
+</body>
+
+</html>
