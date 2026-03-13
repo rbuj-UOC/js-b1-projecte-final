@@ -1,0 +1,27 @@
+{
+  "name": "js-b1-projecte-final",
+  "version": "1.0.0",
+  "description": "test pudwo7-tukgoZ-subvad",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbuj-UOC/js-b1-projecte-final.git"
+  },
+  "keywords": [],
+  "author": "Robert Buj <rbuj@uoc.edu>",
+  "license": "CC0-1.0",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rbuj-UOC/js-b1-projecte-final/issues"
+  },
+  "homepage": "https://github.com/rbuj-UOC/js-b1-projecte-final#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.3",
+    "globals": "^17.4.0",
+    "prettier": "^3.8.1"
+  }
+}
